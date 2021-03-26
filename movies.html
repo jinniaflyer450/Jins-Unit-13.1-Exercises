@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ratings</title>
+    <link rel = "stylesheet" href = "movies.css">
+</head>
+<body>
+    <h1>Movie Catalogue</h1>
+    <h2>Instructions:</h2>
+    <p>Enter a movie title and the rating you gave that movie in the fields below, then click the button to store the information.</p>
+    <h2>New Movies:</h2>
+    <form id = "movie-data-inputs">
+        <label> Enter movie title:
+            <input type = "text" placeholder = "Enter movie title here." id = "movie-title">
+        </label>
+        <label> Movie rating:
+            <label>1
+                <input type = "radio" name = "rating" value = "1">
+            </label>
+            <label>2
+                <input type = "radio" name = "rating" value = "2">
+            </label>
+            <label>3
+                <input type = "radio" name = "rating" value = "3">
+            </label>
+            <label>4
+                <input type = "radio" name = "rating" value = "4">
+            </label>
+            <label>5
+                <input type = "radio" name = "rating" value = "5">
+            </label>
+            <label>6
+                <input type = "radio" name = "rating" value = "6">            
+            </label>
+            <label>7
+                <input type = "radio" name = "rating" value = "7">
+            </label>
+            <label>8
+                <input type = "radio" name = "rating" value = "8">
+            </label>
+            <label>9
+                <input type = "radio" name = "rating" value = "9">
+            </label>
+            <label>10
+                <input type = "radio" name = "rating" value = "10">
+            </label>
+        </label>
+        <button>Add Movie</button>
+    </form>
+    <h2>Stored Movies:</h2>
+    <div id = "existing-movies"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src = "movies.js"></script>  
+</body>
+</html>
