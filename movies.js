@@ -4,6 +4,10 @@
 $('#movie-data-inputs').submit(function(e){
     e.preventDefault();
     let newTitle = $('#movie-title').val();
+    if(newTitle.length < 2){
+        alert('Title too short. Try again!')
+        return;
+    }
     let newRating = $('input[name = rating]:checked').val();
     $('#existing-movies').append(
         `<div class = 'movie'>
